@@ -226,13 +226,28 @@
         </section>
         
         <!-- ORDERS TICKETS -->
-        <section class="orders">
+        <section >
+               
                 <div class="orders">
-                        <h3 style="color: #2b669a; height: 51px;">Order Tickets Online</h3>
+
+                        <h3 >Order Tickets Online</h3>
+
+                        
+                        <div class="details">
+                                <div class="detailimg">
+                                    <img id="imgs" style="display:none;"></img>
+                                </div>
+                                <p id="mov1">MOVIES:</p>
+                                <p id="cin1">CINEMAS:</p>
+                                <p id="date1">DATE:</p>
+                                <p id="time1">TIME:</p>
+                                
+                            </div>
+                            
                         <!-- Movies -->
-                        <div class="dropdown">
-                            <select class="" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width:100%; height: 58px;text-align: center;">
-                                <option value="" style="text-align: center;" selected="selected">MOVIES</option>
+                        <div class="">
+                            <select id="mov" onload="" onchange="displaymov();">
+                                <option value="" selected="selected">MOVIES</option>
                                 <option value="100">Hotel Transylyvania 2</option>
                                 <option value="101">Ant Man</option>
                                 <option value="102">The Scorch Trails</option>
@@ -243,19 +258,20 @@
                                 <option value="107">Spectre 007</option>                 
                             </select>
                         </div>
+                        
                         <!-- Cinemas -->
-                        <div class="dropdown">
-                            <select class="" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="width:100%; height: 58px; text-align: center;">
-                                <option value="" style="text-align: center;" selected="selected">CINEMAS</option>
+                        <div class="">
+                            <select id="cin" onload="" onchange="displaycin();">
+                                <option value="" selected="selected">CINEMAS</option>
                                 <option value="108">Yliopistokatu</option>
                                 <option value="109">Hantie</option>
                                 <option value="110">Kajannintie</option>
                             </select>
                         </div>
                         <!-- Date -->
-                        <div class="dropdown">
-                            <select class="" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="width:100%; height: 58px;text-align: center;">
-                                <option value="" style="text-align: center;" selected="selected">DATE</option>
+                        <div class="">
+                            <select id="date" onload="" onchange="displaydate();">
+                                <option value="" selected="selected">DATE</option>
                                 <option value="111">Today</option>
                                 <option value="112">12.12.2015</option>
                                 <option value="113">13.12.2015</option>
@@ -267,9 +283,9 @@
                             </select>
                         </div>
                         <!-- Time -->
-                        <div class="dropdown">
-                            <select class="" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="width:100%; height: 57px;text-align: center;">
-                                <option value="" style="text-align: center;" selected="selected">TIME</option>
+                        <div class="">
+                            <select id="time" onchange="displaytime();">
+                                <option value="" selected="selected">TIME</option>
                                 <option value="119">08:15</option>
                                 <option value="120">10:15</option>
                                 <option value="121">12:15</option>
@@ -280,13 +296,12 @@
                                 <option value="126">22:15</option>  
                             </select> 
                         </div>
-            
-            
-                        <button type="button" class="btn btn-success bookNow" data-toggle="modal" data-target=".myModal2">Book Now
-                        </button>
+                        <button>Book Now</button>
+                        
+                        
                     </div>
                             
-                        </section>
+                    </section>
                 
                 
                 

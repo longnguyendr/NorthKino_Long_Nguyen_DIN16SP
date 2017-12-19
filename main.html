@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>eSporthub</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="shortcut icon" href="../favicon.ico"> 
+    <script src="js/modernizr.custom.63321.js"></script>
+    <link rel="stylesheet" href="css/login.css">
+
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+
+        <div class="head">
+                <h1 class=""><a href="index.html"><img src="images/nk2.png" alt="nk2" width="50px" height="50px"> NorthKino.fi</a></h1>
+                <ul>
+                    <li><a href="#" title="">Home</a></li>
+                    <li><a href="#" title="">Languages</a></li>
+                    <li><a href="#" title="">Schedules</a></li>
+                    <li><a href="#" title="">Event</a></li>
+                    <li><a href="#" title="">Top 10</a></li>
+                    <a style="float:right;margin-top:10px;margin-right:2%" href=""><img src="images/fb.png" alt="fb"></a>
+                    <a style="float:right;margin-top:10px;margin-right:1%" href=""><img src="images/twitter.png" alt="twitter"></a>
+                    <a style="float:right;margin-top:10px;margin-right:1%" href=""><img src="images/gmail.png" alt="gmail"></a>
+                    <!-- LOGIN MODAL -->
+                    <li style="float:right;margin-right:4%">
+                        <a href="#" onclick="document.getElementById('id01').style.display='block'" style="width:auto;" >Login</a>
+                    </li>
+                    
+                    <div id="id01" class="modal">
+                                    <!--LOGIN-->
+                                  <form class="modal-content animate" action="/action_page.php">
+                            
+                                      <div class="materialContainer">
+                                        
+                                        <div class="box">
+                      
+                                          <div class="title">LOGIN</div>
+                      
+                                            <div class="input">
+                                              <label for="name">Username</label>
+                                              <input type="text" name="name" id="name">
+                                              <span class="spin"></span>
+                                            </div>
+                      
+                                            <div class="input">
+                                              <label for="pass">Password</label>
+                                              <input type="password" name="pass" id="pass">
+                                              <span class="spin"></span>
+                                            </div>
+                      
+                                            <div class="button login">
+                                              <button><span>GO</span> <i class="fa fa-check"></i></button>
+                                            </div>
+                      
+                                            <a href="" class="pass-forgot">Forgot your password?</a>
+                      
+                                        </div>
+
+                                        
+                                <!--REGISTER-->
+                                        <div class="overbox">
+                                            <div class="material-button alt-2"><span class="shape"></span></div>
+                      
+                                            <div class="title">REGISTER</div>
+                      
+                                            <div class="input">
+                                              <label for="regname">Username</label>
+                                              <input type="text" name="regname" id="regname">
+                                              <span class="spin"></span>
+                                            </div>
+                      
+                                            <div class="input">
+                                              <label for="regpass">Password</label>
+                                              <input type="password" name="regpass" id="regpass">
+                                              <span class="spin"></span>
+                                            </div>
+                      
+                                            <div class="input">
+                                              <label for="reregpass">Repeat Password</label>
+                                              <input type="password" name="reregpass" id="reregpass">
+                                              <span class="spin"></span>
+                                            </div>
+                      
+                                            <div class="button">
+                                              <button><span>NEXT</span></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                              </form>
+                              </div>
+                       <!--END LOGIN MODAL-->
+
+                       <!--SEARCH BAR-->
+                    <li style="float:left;margin-left:2%;">
+                        <form>
+                            <input type="text" name="search" placeholder="Search..">
+                        </form>
+                    </li>
+                   
+                 
+                </ul>
+            </div>
+    <!-- NAVIGATION BAR END -->
+
+
+        <!-- SLIDE SHOW -->
+        <section class="slidebg">
+                <div class="slideshow-container">
+                        
+                        <div class="mySlides fade">
+                            <div class="numbertext">1 / 4</div>
+                            <img src="images/antman.jpg" style="width:100%">
+                            <div class="text">
+                                <span><a href="#" title="" >Book Now</a></span>
+                                <span><a href="#" title="" >Trailer</a></span>
+                            </div>
+                        </div>
+                        
+                        <div class="mySlides fade">
+                          <div class="numbertext">2 / 4</div>
+                          <img src="images/hotel.jpg" style="width:100%">
+                          <div class="text">
+                                <span><a href="#" title="" >Book Now</a></span>
+                                <span><a href="#" title="" >Trailer</a></span>
+                            </div>
+                        </div>
+                        
+                        <div class="mySlides fade">
+                          <div class="numbertext">3/4</div>
+                          <img src="images/tomorrowland.jpg" style="width:100%">
+                          <div class="text">
+                                <span><a href="#" title="" >Book Now</a></span>
+                                <span><a href="#" title="" >Trailer</a></span>
+                            </div>
+                        </div>
+                        <div class="mySlides fade">
+                                <div class="numbertext">4 / 4</div>
+                                <img src="images/noescape.jpg" style="width:100%">
+                                <div class="text">
+                                      <span><a href="#" title="" >Book Now</a></span>
+                                      <span><a href="#" title="" >Trailer</a></span>
+                                  </div>
+                              </div>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        
+                        </div>
+                        <br>
+                        
+                        <div style="text-align:center">
+                          <span class="dot" onclick="currentSlide(1)"></span> 
+                          <span class="dot" onclick="currentSlide(2)"></span> 
+                          <span class="dot" onclick="currentSlide(3)"></span> 
+                          <span class="dot" onclick="currentSlide(4)"></span>
+                        </div>
+            
+            <!-- SLIDE SHOW END -->
+
+        </section>
+        
+
+
+
+        <!--  SHOW -->
+        <section>
+            <div class="container">	
+                    <!-- Codrops top bar -->
+                    </div><!--/ Codrops top bar -->
+                    
+                    <div class="main">
+                        <div id="mi-slider" class="mi-slider">
+                            <ul>
+                                <li>
+                                    <h4>Fantatics 4</h4>
+                                    <a href="#"><img src="images/now5.jpg" alt="img01"><h5>Booking Now</h5></a>
+                                </li>
+                                <li>
+                                    <h4>Tomorrowland</h4>
+                                    <a href="#"><img src="images/now6.jpg" alt="img01"><h5>Booking Now</h5></a>
+                                </li>
+                                <li>
+                                    <h4>Spectre 007</h4>
+                                    <a href="#"><img src="images/now7.jpg" alt="img01"><h5>Booking Now</h5></a>
+                                </li>
+                                <li>
+                                    <h4>The Hunger Games: Mocking Jay</h4>
+                                    <a href="#"><img src="images/now8.jpg" alt="img01"><h5>Booking Now</h5></a>
+                                </li>
+                                
+                            </ul>
+                            <ul>
+                                    <li>
+                                        <h4>Now you see me</h4>
+                                        <a href="#"><img src="images/come1.jpg" alt="img01"><h5>Watch Trailer</h5></a>
+                                    </li>
+                                    <li>
+                                        <h4>Keeper of Darkness</h4>
+                                        <a href="#"><img src="images/come2.jpg" alt="img01"><h5>Watch Trailer</h5></a>
+                                    </li>
+                                    <li>
+                                        <h4>The Wave</h4>
+                                        <a href="#"><img src="images/come3.jpg" alt="img01"><h5>Watch Trailer</h5></a>
+                                    </li>
+                                    <li>
+                                        <h4>Operator</h4>
+                                        <a href="#"><img src="images/come4.jpg" alt="img01"><h5>Watch Trailer</h5></a>
+                                    </li>
+                            </ul>
+                            <nav>
+                                <a href="#">Now Showing</a>
+                                <a href="#">Coming Soon</a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <!-- /container -->
+        </section>
+        
+        <!-- ORDERS TICKETS -->
+        <section class="orders">
+                <div class="orders">
+                        <h3 style="color: #2b669a; height: 51px;">Order Tickets Online</h3>
+                        <!-- Movies -->
+                        <div class="dropdown">
+                            <select class="" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width:100%; height: 58px;text-align: center;">
+                                <option value="" style="text-align: center;" selected="selected">MOVIES</option>
+                                <option value="100">Hotel Transylyvania 2</option>
+                                <option value="101">Ant Man</option>
+                                <option value="102">The Scorch Trails</option>
+                                <option value="103">No Escape</option>
+                                <option value="104">Fantastic 4</option>
+                                <option value="105">Tomorrow Land</option>
+                                <option value="106">Hunger Game: Mocking Jay 2</option>
+                                <option value="107">Spectre 007</option>                 
+                            </select>
+                        </div>
+                        <!-- Cinemas -->
+                        <div class="dropdown">
+                            <select class="" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="width:100%; height: 58px; text-align: center;">
+                                <option value="" style="text-align: center;" selected="selected">CINEMAS</option>
+                                <option value="108">Yliopistokatu</option>
+                                <option value="109">Hantie</option>
+                                <option value="110">Kajannintie</option>
+                            </select>
+                        </div>
+                        <!-- Date -->
+                        <div class="dropdown">
+                            <select class="" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="width:100%; height: 58px;text-align: center;">
+                                <option value="" style="text-align: center;" selected="selected">DATE</option>
+                                <option value="111">Today</option>
+                                <option value="112">12.12.2015</option>
+                                <option value="113">13.12.2015</option>
+                                <option value="114">14.12.2015</option>
+                                <option value="115">15.12.2015</option>
+                                <option value="116">16.12.2015</option>
+                                <option value="117">17.12.2015</option>
+                                <option value="118">18.12.2015</option>   
+                            </select>
+                        </div>
+                        <!-- Time -->
+                        <div class="dropdown">
+                            <select class="" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="width:100%; height: 57px;text-align: center;">
+                                <option value="" style="text-align: center;" selected="selected">TIME</option>
+                                <option value="119">08:15</option>
+                                <option value="120">10:15</option>
+                                <option value="121">12:15</option>
+                                <option value="122">14:15</option>
+                                <option value="123">16:15</option>
+                                <option value="124">18:15</option>
+                                <option value="125">20:15</option>
+                                <option value="126">22:15</option>  
+                            </select> 
+                        </div>
+            
+            
+                        <button type="button" class="btn btn-success bookNow" data-toggle="modal" data-target=".myModal2">Book Now
+                        </button>
+                    </div>
+                            
+                        </section>
+                
+                
+                
+                        <!--END ORDERS TICKETS -->
+        <!-- FOOTER -->
+        <section class="footer">
+            <div class="foo"><h1>About us</h1></div>
+            <div >
+                <li><a href="#">Term</a></li>
+                <li><a href="#">Conditions</a></li>
+                <li><a href="#">Contact</a></li>
+            </div>
+        </section>
+
+
+
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="js/jquery.catslider.js"></script>
+        <script src="main.js"></script>
+        <script src="js/login.js"></script>
+    <!-- div wrapper -->
+</body>
+
+</html>
